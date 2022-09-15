@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fase 2</title>
+</head>
+<body>
+    <header>
+        <h1>Aprendiendo Diseño Web: Etiquetas Semánticas, CSS Grid.</h1>
+    </header>
+    <nav>
+        <ul>
+            <li>Inicio</li>
+            <li>Temas
+                <ul>
+                    <li>Etiquetas Semánticas</li>
+                    <li>CSS Grid</li>
+                </ul>
+            </li>
+            <li>Recursos</li>
+                <ul>
+                     <li>imagen de Esquema de etiquetas semánticas</li>
+                     <li>Imagen de ejemplo de CSS Grid</li>
+                </ul>
+            <li>Aprendizaje</li>
+                <ul>
+                    <li>Se explica conceptos basicos sobre las etiquetas semanticas en html5</li>
+                    <li>Se explica concepto basico de CSS Grid</li>
+                </ul>
+            <li>Autor: Luis Fernando Muñooz</li>
+        </ul>
+
+    </nav>
+    <hr>
+    <section>
+        <h2>Propósito del sitio</h2>
+
+        <p>
+            Este sitio esta desarrollado con el fin de enseñar da una forma sencilla algunos <br>
+             conceptos básicos del diseño web, como lo son las etiquetas básicas en html y CSS grid, <br>
+              se explica como funcionan estos elementos y en que circunstancias se pueden utilizar.
+        </p>
+        <hr>
+        <article>
+            <h3>
+                Etiquetas Semánticas
+            </h3>
+            <h4>
+                Que son las etiquetas semánticas:
+            </h4>
+            <p>
+                Una etiqueta se califica como semántica si tiene que ver el significado, <br>
+                es decir, si nos informa sobre lo que trata su contenido. Por ejemplo, <br>
+                la etiqueta SECTION nos dice que  contiene una sección o capítulo dentro <br>
+                de la página. (Aula Clic, 2015)
+            </p>
+            
+            <img src="img/etiquetas semanticas esquema.png" alt="Esta imagen es un esquema de etiquetas semánticas">
+            
+            <h4>Header:</h4>
+
+            <p>
+                Se utiliza como una introducción del elemento que la contiene. Si colocamos <br>
+                un HEADER en el BODY, a primer nivel, será una introducción o presentación <br>
+                de toda la página. Si colocamos un HEADER dentro de un SECTION, contendrá <br>
+                una introducción a esa sección. También se pueden colocar dentro de un ARTICLE. <br>
+                <br>
+                El HEADER suele llevar el título, la descripción corta y el logo de la página. <br>
+                El HEADER por sí mismo no separa contenidos, no se debe utilizar aislado, <br>
+                sino dentro de otra etiqueta semántica, o a primer nivel en el BODY. <br>
+                <br>
+                El HEADER no es equivalente a la parte superior de la página, aunque frecuentemente <br> 
+                está en esa posición. La etiqueta HGROUP que se solía utilizar junto con el HEADER <br> 
+                ha quedado obsoleta. <br>
+                <br>
+                Es bastante frecuente utilizar las etiquetas H1, H2, ... para escribir los títulos <br>
+                dentro del HEADER.
+
+            </p>
+
+            <h4>Section</h4>
+
+            <p>
+                Una SECTION agrupa contenido con un tema común, por ejemplo, las diferentes partes <br> 
+                de un periódico: política, sociedad, deportes, ... <br>
+                Un sitio de cocina podría estar organizado en secciones. Una SECTION podría ser <br> 
+                recetas de carne, otras recetas de pescado y otra de verduras. Dentro de cada SECTION <br> 
+                tendríamos un ARTICLE por cada receta. <br>
+
+                Cada SECTION puede estar encabezada por una etiqueta H1, H2... dentro de una SECTION <br> 
+                suelen haber etiquetas ARTICLE, y también etiquetas DIV y P. <br>
+                Una SECTION no debe ser usada con el único fin de dar formato, <br> 
+                para eso se utiliza la etiqueta DIV.
+
+            </p>
+
+            <h4>Article</h4>
+
+            <p>
+                Representa una unidad de contenido, es decir, contenido que responde a un tema <br>
+                concreto. El ejemplo más claro es un artículo dentro de una revista, por ejemplo, <br> 
+                en una página de cocina, un ARTICLE sería cómo elaborar un determinado plato. <br> 
+                En un foro, un ARTICLE sería un post, o entrada en el foro. <br>
+                <br>
+
+                Se pueden anidar un ARTICLE dentro de otro ARTICLE. Dentro de un ARTICLE el contenido <br>
+                se suele estructurar con las etiquetas DIV y P. También está permitido poner dentro <br> 
+                de un ARTICLE una SECTION, siempre que el artículo sea largo y tenga diferentes <br>
+                secciones, pero lo más natural es que el ARTICLE vaya dentro de una SECTION. <br> 
+                Más adelante trataremos cómo crear estructuras de páginas complejas, con tres niveles. <br>
+
+            </p>
+
+            <h4>Nav</h4>
+
+            <p>
+                Esta etiqueta está pensada para contener la barra de navegación o los enlaces <br> 
+                a las páginas del sitio web. <br>
+                <br>
+                Normalmente va en la parte superior de la página o en un lateral. Suele estar formada <br>
+                por una lista de enlaces con las etiquetas UL y LI. Aunque hay multitud de diseños <br>
+                diferentes de barras de navegación y menús. <br>
+            </p>
+
+            <h4>Aside</h4>
+
+            <p>
+                Esta etiqueta está diseñada para contenido tangencial, es decir, menos importante <br>
+                que el cuerpo de la página, y que suele ser de un tema relacionado indirectamente <br> 
+                (o no relacionado) con el tema principal. Se suele colocar en los laterales de la página. <br> 
+                Pero no todo lo que va en los laterales es ASIDE. Por ejemplo, si la página tiene <br>
+                publicidad en el lateral derecho, puede colocarse en una etiqueta ASIDE, también <br>
+                una pequeña reseña sobre el autor podría ir en esta etiqueta. <br>
+            </p>
+
+            <h4>Footer</h4>
+
+            <p>
+                Normalmente va al final de la página y contiene información del tipo: autor, copyright, <br>
+                contacto, mapa del sitio, etc. Se pueden poner HEADER y FOOTER dentro de SECTION y ARTICLE, <br>
+                aunque no es lo más normal. No hay nada prohibido, pero debe tener cierta lógica o sentido <br>
+                semántico. (Aula Clic, 2015)
+            </p>
+
+        </article>
+        <hr>
+        <article>
+            <h3>
+                CSS Grid
+            </h3>
+            
+            <p>
+                CSS Grid layout contiene funciones de diseño dirigidas a los desarrolladores de aplicaciones web. <br> 
+                El CSS grid se puede utilizar para lograr muchos diseños diferentes. También se destaca por <br> 
+                permitir dividir una página en áreas o regiones principales, por definir la relación en términos <br> 
+                de tamaño, posición y capas entre partes de un control construido a partir de primitivas HTML. <br>
+                <br>
+                Al igual que las tablas, el grid layout permite a un autor alinear elementos en columnas y filas. <br> 
+                Sin embargo, con CSS grid son posibles muchos más diseños y de forma más sencilla que con las tablas. <br> 
+                Por ejemplo, los elementos secundarios de un contenedor de cuadrícula podrían posicionarse para que <br> 
+                se solapen y se superpongan, de forma similar a los elementos posicionados en CSS. (Colaboradores de MDN, 2021)
+            </p>
+            <img src="img/ejemplo css grid.png" alt="Esta imagen muestra un ejemplo de css grid">
+        </article>
+
+        <h3>Mockup</h3>
+        <img src="img/Mockup_Fase_2.png" alt="Este es un Mockup">
+    </section>
+    <hr>
+
+        <p>
+            Referencias: <br>
+            Aula Clic. (01 de Junio de 2015). Artículo 33 Nuevas etiquetas semanticas. Obtenido de www.aulaclic.es: https://www.aulaclic.es/articulos/html5-semantica_1.html <br>
+            Colaboradores de MDN. (19 de agosto de 2021). mdn web docs. Obtenido de developer.mozilla.org: https://developer.mozilla.org/es/docs/Web/CSS/CSS_Grid_Layout <br>
+        </p>
+        
+
+    <hr>
+
+
+    <footer>
+        <p>
+            Informacion del autor: Skype: munozconde3 Correo: munozconde3@gmail.com Ultima fecha de modificación: (14/09/2022)
+        </p>
+    </footer>
+
+</body>
+</html>
