@@ -1,0 +1,71 @@
+.encabezado{
+background-color: #CFD2CF;
+padding: 35px;
+text-decoration: none;
+}
+
+
+.contenedor{
+background-color: #F5EDDC;
+padding: 35px;
+display:grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.tematica{
+background-color:  #FA9494;
+padding: 35px;
+grid-column: 1/4;
+}
+.lateral{
+background-color: #CFD2CF;
+padding: 35px;
+grid-column: 4/5;
+}
+.pie{
+background-color: #EB1D36;
+padding: 35px;
+text-decoration-color: #F5EDDC;
+}
+body{
+    background-color:#F5EDDC ;
+}
+nav{
+    max-width: 900px;
+    margin: auto;
+    background-color: #333;
+    font-size: 20px;
+    margin-top: 50px;
+}
+.menu-horizontal{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+.menu-horizontal > li > a{
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+}
+.menu-horizontal > li:hover{
+    background-color: red;
+}
+.menu-vertical{
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 200px;
+    background-color: rgba(0, 0, 0, .5);
+}
+.menu-horizontal li:hover .menu-vertical{
+    display: block;
+}
+.menu-vertical li:hover{
+    background-color: black;
+}
+.menu-vertical li a{
+    display: black;
+    color: white;
+    padding: 15px 15px 15px 20px;
+    text-decoration: none;
+}
